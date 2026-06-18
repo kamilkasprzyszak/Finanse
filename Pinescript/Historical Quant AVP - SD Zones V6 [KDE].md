@@ -4,6 +4,9 @@
 
 **Historical Quant AVP - S/D Zones V6 MAX [KDE]** to zaawansowany wskaźnik analizy przepływu zleceń (Order Flow) i handlu ilościowego, zaimplementowany w języku Pine Script v6. Skrypt służy do precyzyjnej identyfikacji instytucjonalnych stref popytu i podaży (Supply/Demand Zones) oraz węzłów wysokiego wolumenu (HVN - High Volume Nodes) na rynkach kontraktów terminowych (indeksy, kryptowaluty).
 
+<img width="1261" height="775" alt="image" src="https://github.com/user-attachments/assets/c47f143f-6ad4-4eb6-84b2-9ed2fc3142dd" />
+
+
 Narzędzie przetwarza surowe dane wolumenowe i cenowe w ujęciu wielookresowym (Historical Anchored Volume Profile), stosując aparat statystyczny do filtrowania szumu rynkowego oraz dynamicznego mapowania płynności rynkowej w czasie rzeczywistym.
 
 ---
