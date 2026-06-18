@@ -1,43 +1,43 @@
 # Quantitative Trading & Algorithmic Strategies
 
-Cześć! To repozytorium to moja piaskownica (i jednocześnie portfolio) związana z **handlem ilościowym (Quantitative Trading)** i automatyzacją strategii. Łączę tutaj analizę danych rynkowych z kodowaniem gotowych systemów transakcyjnych. 
+Repozytorium zawiera autorskie skrypty, wskaźniki oraz kompletne systemy transakcyjne dedykowane dla rynków kontraktów terminowych (indeksy USA oraz kryptowaluty). Projekt stanowi portfolio moich kompetencji w zakresie handlu ilościowego (Quantitative Trading), analizy danych oraz automatyzacji procesów decyzyjnych.
 
-Skupiam się głównie na rynkach kontraktów terminowych (indeksy USA, krypto) oraz dynamicznym zarządzaniu ryzykiem. Repozytorium traktuję jako rozszerzenie mojego CV – znajdziesz tu żywy dowód na to, jak przekładam matematykę i logikę rynkową na działający kod.
+Projekt łączy podejście statystyczne z implementacją algorytmów egzekucyjnych na platformach TradingView, MetaTrader 5 oraz giełdach zdecentralizowanych.
 
 ---
 
-## 🛠️ Co tu znajdziesz? (Struktura projektu)
+## 🛠️ Architektura Projektu
 
-Projekt podzieliłem na trzy główne filary technologiczne:
+Kod został podzielony strukturalnie według wykorzystywanych technologii i środowisk:
 
 ### 🐍 Python (`/python`)
-Tutaj dzieje się cała "brudna robota" związana z analizą danych i backendem.
-* **Integracje API & DeFi:** Skrypty pobierające i analizujące dane (np. historyczne funding rates, tracking portfeli wielorybów na platformach typu Hyperliquid).
-* **Analiza Statystyczna:** Modele matematyczne, badanie zmienności (GARCH, regresja lokalna) i przetwarzanie surowych danych rynkowych za pomocą Pandas i NumPy.
+Moduły odpowiedzialne za backend, analizę danych rynkowych oraz integrację z zewnętrznymi architekturami.
+* **Analiza Ilościowa:** Implementacja modeli matematycznych i statystycznych (analiza zmienności, regresje lokalne) przy użyciu bibliotek ekonometrycznych.
 
 ### 🌲 Pine Script (`/pine-script`)
-Szybkie prototypowanie i analiza wizualna na TradingView.
-* **Autorskie wskaźniki:** Implementacje zaawansowanych konceptów statystycznych, które pomagają odsiać szum rynkowy.
-* **Backtesting:** Gotowe strategie (v5) zoptymalizowane pod trading intraday, gdzie liczy się precyzja wejścia i sztywne zasady wyjścia.
+Prototypowanie, analiza wizualna oraz środowisko testowe na platformie TradingView.
+* **Wskaźniki Statystyczne (v5):** Narzędzia filtrujące szum rynkowy na podstawie zaawansowanych wyliczeń matematycznych.
+* **Systemy Backtestingowe:** Strategie intraday zaimplementowane w celu weryfikacji hipotez rynkowych na danych historycznych.
 
 ### 📊 MQL5 (`/mql5`)
-Czysta egzekucja i automatyzacja na platformie MetaTrader 5.
-* **Expert Advisors (EAs):** Boty handlowe, które bez emocji realizują założenia strategii 24/7.
-* **Risk Management:** Skrypty i biblioteki pomocnicze odpowiedzialne za dynamiczne wyliczanie wielkości pozycji i trailing stopy.
+Warstwa egzekucyjna i produkcyjna dla platformy MetaTrader 5.
+* **Expert Advisors (EAs):** W pełni autonomiczne roboty handlowe realizujące założenia systemów matematycznych.
+* **Moduły Zarządzania Ryzykiem:** Biblioteki odpowiedzialne za dynamiczne kalkulowanie wielkości pozycji, kontrolę obsunięć (drawdown) oraz trailing stopy.
 
 ---
 
-## 💻 Mój Stack
+## 💻 Stack Technologiczny
 
-* **Języki:** Python, Pine Script (v5), MQL5
-* **Analiza danych:** Pandas, NumPy, Statsmodels, SciPy
-* **Inne:** REST/Websockets API, Git
-
----
-
-## 📈 Jak podchodzę do tradingu?
-Nie szukam "świętego graala". Moje podejście opiera się na **radykalnym zarządzaniu ryzykiem** i szukaniu powtarzalnych przewag statystycznych. Każda strategia lądująca w tym repozytorium przechodzi przez rygorystyczny backtesting (z uwzględnieniem kosztów transakcyjnych i poślizgów), gdzie kluczowe wskaźniki to dla mnie Drawdown, Profit Factor i Sharpe Ratio, a nie tylko sucha stopa zwrotu.
+* **Języki programowania:** Python, Pine Script (v5), MQL5
+* **Analiza danych & Ekonometria:** Pandas, NumPy, Statsmodels, SciPy
+* **Komunikacja:** REST API, WebSockets, Git
 
 ---
 
-*Disclaimer: Kod zawarty w tym repozytorium służy wyłącznie celom badawczym i edukacyjnym.*
+## 📈 Metodologia i Podejście Rynkowe
+
+Głównym założeniem projektów jest eliminacja czynnika uznaniowego na rzecz przewagi statystycznej i rygorystycznej kontroli ryzyka. Każda strategia przed wdrożeniem przechodzi proces backtestingu uwzględniający koszty transakcyjne, poślizgi cenowe (slippage) oraz płynność arkusza zleceń. Kluczowymi metrykami efektywności kodu są dla mnie Profit Factor, Sharpe Ratio oraz maksymalny Drawdown, a nie wyłącznie nominalna stopa zwrotu.
+
+---
+
+*Disclaimer: Materiały zawarte w tym repozytorium mają charakter wyłącznie badawczo-edukacyjny i nie stanowią rekomendacji inwestycyjnych.*
